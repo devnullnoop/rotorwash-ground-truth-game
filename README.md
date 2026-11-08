@@ -2,7 +2,7 @@
 
 [![Highlight reel](media/reel_poster.jpg)](media/rotorwash_ground_truth_reel.mp4)
 
-*Click the image for the highlight reel (2 min 14 s, with sound).*
+*Click the image for the highlight reel (2 min 36 s, with sound).*
 
 Helicopter combat over real US cities. The terrain, the streets, the bridges,
 and the buildings come from public survey data. Free for macOS and Windows.
@@ -34,7 +34,7 @@ then Run anyway.
 | CPU | 4 cores | 6+ cores |
 | RAM | 8 GB | 16 GB |
 | GPU | Vulkan capable (GTX 1060 / RX 580 class), or any Apple Silicon | GTX 1660 / RX 5600 or better |
-| Disk | 1 GB game + 0.4 to 0.7 GB per city | all four cities, about 3 GB total |
+| Disk | 1 GB game + 0.4 to 0.7 GB per city | all four cities, about 3 GB total; optional DC detail imagery adds 2.5 GB |
 | OS | macOS 11 / Windows 10 64-bit | |
 
 Development and testing happen on Apple Silicon. The Windows build comes off
@@ -73,7 +73,10 @@ assembled from measurements.
 - Terrain is USGS 3DEP lidar at 1 meter per post.
 - Bridge decks are recovered from the lidar point cloud, so traffic crosses
   the Brooklyn Bridge at its real deck height.
-- The ground texture is USDA NAIP aerial imagery.
+- The ground texture in Washington is the city's own 2023 orthophoto
+  flight. Parked cars and aircraft are washed out of the photographs and
+  placed as 3D objects, so nothing on the ground is painted on. The other
+  cities use USDA NAIP aerial imagery.
 - Buildings are OpenStreetMap footprints with recorded heights.
 - Trees are individuals. A per-tree canopy map places each one, so the rows
   on the National Mall match the real plantings.
@@ -94,5 +97,6 @@ A gamepad works: left stick collective and pedals, right stick cyclic.
 ## License
 
 The game and the city packs are free to download and play. City packs contain
-compiled meshes and textures derived from USGS, USDA NAIP, and OpenStreetMap
-(ODbL) sources. Third-party credits ship inside the game.
+compiled meshes and textures derived from USGS, the District of Columbia
+OCTO Orthophoto 2023 (CC BY 4.0), Virginia VBMP (VGIN), USDA NAIP, and
+OpenStreetMap (ODbL) sources. Third-party credits ship inside the game.
