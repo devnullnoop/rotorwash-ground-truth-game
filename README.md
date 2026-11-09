@@ -51,6 +51,10 @@ If something is wrong on your machine, open an issue with your GPU model.
   computed impact point, target boxes with range.
 - Destruction that stays. Bullets chip buildings voxel by voxel. Rockets
   collapse them. Kills leave burning wrecks for the whole session.
+- Fire that behaves like fire. Explosions mushroom, collapse, and feed
+  columns of smoke that lean with the wind. Burning buildings carry wide
+  fire fronts. The flame and blast shapes are baked from fluid simulations
+  and checked against real footage.
 - Living streets: traffic that drives, panics near explosions, and avoids
   fires.
 - Sensors: night vision, white-hot and black-hot thermal, and an ironbow
